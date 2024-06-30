@@ -42,9 +42,9 @@ public class Main {
          */
 
         try {
-            Person("Login_123", "password_123", "password_123");
+            Person("Login_123", "password_12", "password_123");
         } catch (WrongLoginException | WrongPasswordException e) {
-            System.out.println("Ввудите логин и пароль");
+            System.out.println("Введите логин и пароль" + e);
         } finally {
             System.out.println("Программа завершена.");
         }
